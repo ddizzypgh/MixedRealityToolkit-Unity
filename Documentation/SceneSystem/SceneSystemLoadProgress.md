@@ -28,7 +28,7 @@ sceneSystem.LoadContent("ContentScene2", LoadSceneMode.Single)
 
 `SceneOperationInProgress` can be useful if activity should be suspended while content is being loaded:
 ```
-public class FooManager : MonoBehavior
+public class FooManager : MonoBehaviour
 {
     private void Update() 
     {
@@ -49,7 +49,7 @@ public class FooManager : MonoBehavior
 
 `SceneOperationProgress` can be used to display progress dialogs:
 ```
-public class ProgressDialog : MonoBehavior
+public class ProgressDialog : MonoBehaviour
 {
     private void Update() 
     {
@@ -94,7 +94,7 @@ Action | When it's invoked | Content Scenes | Lighting Scenes | Manager Scenes
 ### Examples
 Another progress dialog example using actions and a coroutine instead of Update:
 ```
-public class ProgressDialog : MonoBehavior
+public class ProgressDialog : MonoBehaviour
 {
     private bool displayingProgress = false;
 
